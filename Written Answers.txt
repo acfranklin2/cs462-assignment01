@@ -17,7 +17,10 @@ This robot has access to a lot of important patient information (such as the blo
 This is absolutely a sequential environment, since each of the robot’s decisions during assistance will have an impact on the care of the patient. It’s not like the robot makes a decision on one person then never has to again: They may keep visiting a few over and over again, and their decisions during assistance will build over time.
 
 In hospitals, things can just happen. Even if the robot’s general indications of a patient trend upwards, they may just end up suddenly falling and the robot will have to act to find out the cause and solution. Also, certain methods that work for a majority of patients may wind up being detrimental to some others, and will need to be taken into account as well. This is not a deterministic environment by any means, but a stochastic one.
- 
+
+-------------------------
+1B
+-------------------------
    
 In a game of virtual poker, there won’t be any scenarios that cause the environment to change. It’s just you, the AI and the cards. Also, when it’s one’s turn, the other player can’t act just yet. This is a static environment.
 
@@ -27,6 +30,9 @@ Each deal is primarily unrelated to the next. Previous deals won’t necessarily
 
 While certain hands will always beat other kinds, no matter what, the way the cards are dealt is entirely random. The AI can’t know what the best call is to make, so it’s also stochastic.
 
+-------------------------------
+1C
+-------------------------------
  
 This environment is based entirely on the feedback and watch-time of the person using it. Only the things they watch and rate will be factored in, so it’s not like a show will just pop up without user input. Only the user can make changes, so it’s static.
 
@@ -36,6 +42,9 @@ This is very much sequential, since each and every show/movie the user watches w
 
 This agent, while they may make pretty good guesses, can’t be entirely certain that a show they recommend will be liked by the user, even if it’s a 99% chance. Likewise, a show the AI might think the user is not likely to enjoy based on the track record so far may end up being very enjoyed. This is stochastic in a nutshell. 
 
+-----------------------------
+1D
+-----------------------------
  	
 Because the chatbot’s calculations can only come from what the person’s responses are, it’s a static system.
  
@@ -45,8 +54,11 @@ It’s unlikely a chatbot could just diagnose somebody after a single interactio
 
 If the chatbot’s utilizing SMS, that means it likely has a library of phrases that may be attributed to . But there’s also just as likely a chance that 
 
+-----------------------
+1E
+-----------------------
   
-When it comes to the ocean floor, the environment will be mainly unchanging.
+When it comes to the ocean floor, the environment will be mainly unchanging. Unless some surprise volcano manifests itself, the only changes will be coming from the sub itself. That makes this environment STATIC.
 
 The robot could have a way to see what’s there on the ocean floor around it and maybe a little bit below, but it can’t know for certain what’s in every possible cubic inch underneath or on. And because it would need to move from place to place to get a better look, it definitely can’t be a fully observable environment, but a partially observable environment.
  
@@ -54,22 +66,35 @@ Each instance of collecting a sample from the ocean floor is pretty self-contain
   
 When collecting samples, the AI pilot knows that activating the “extend arm” command will cause the arm to extend, and the same applies to “retract arm”. Each command has a known outcome, and so this is a deterministic system.
 
-  
+==========================================================================
+QUESTION 2
+==========================================================================
+
 Because the goal of this problem is for the monkey to reach the bananas, and that can only be done when the chair is moved to the middle, the monkey’s on it and the stick is in hand, the goal state is this:
 
-<holdingStick, chairInMiddle, >
+<holdingStick, chairInMiddle, onChair>
 
-The state space for the full problem is shown below: 
+As for the state space, that is seen in the file "Full State Space.png" on the repo.
 
- 
- 
-Kuki’s responses definitely feel more artificial and/or off whenever I don’t speak in clear terms. Small things like “You too?” or “How about you?” tend to be harder for her to get. Then there are times just saying some terms results in strange outputs, like the ones below:
+=======================================================================
+QUESTION 3
+=======================================================================
 
+3A: Kuki’s responses definitely feel more artificial and/or off whenever I don’t speak in clear terms. Small things like “You too?” or “How about you?” tend to be harder for her to get. Then there are times just saying some terms results in strange outputs, like the following conversation:
 
-
+Me: "Then what should I do?"
+Kuki: "THen what? What are you expecting? Have you tried asking your friend what they would do?"
+Me: "I don't know, things are moving fast."
+Kuki: "Tejas is the fifth studio album by the American rock band ZZ Top. It was released in late November 1976, on the London label."
 
 But when I talk with her about things that people are more likely to converse about, such as movies, food or everyday things, her conversations did feel more natural. For example, I told her about how I haven’t drank a soda in my entire life, and she expressed genuine curiosity. Also, sometimes when I did emojis or acronyms (LOL), she knew what those were and would momentarily communicate more human. There were also times I was able to turn a conversation around and showcase something “new” to her, like when she kept saying “Olivia Oranges?” whenever I went “O_O”
 
-
-
+Me: "Who is Olivia Oranges?"
+Kuki: "Sorry, I thought we were talking in abbreviations."
+Me: "No. O_O is a face."
+K: "How coume you were typing in initials then? Wow. I didn't know that."
+Me: "There's an underscore between the Os, though."
+K: "oh. There sure is."
+Me: "Yeah, so that means O_O is a face. See how it looks like a wide-eyed face?"
+K: "It goes without saying. I get it. Wow, I didn't know that. I see. Interesting comparison."
 
