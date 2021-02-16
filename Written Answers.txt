@@ -1,0 +1,75 @@
+Alex Franklin
+Professor Brooks
+CS 462-01
+11 February 2021
+
+===================================================
+AI Assignment #1 - Written Answers
+===================================================
+ 
+-------------------------
+1A
+-------------------------
+An environment such as a hospital would absolutely be dynamic for an AI, since medical events have a possibility of happening at any given time for any of the patients that the robot is communicating with. Changes will keep happening that are entirely not the robot’s doing, and will have to keep watch for.
+
+This robot has access to a lot of important patient information (such as the bloodwork, vitals and their general well-being), but it still can’t truly observe everything. As such, I believe this is a partially observable environment.
+  
+This is absolutely a sequential environment, since each of the robot’s decisions during assistance will have an impact on the care of the patient. It’s not like the robot makes a decision on one person then never has to again: They may keep visiting a few over and over again, and their decisions during assistance will build over time.
+
+In hospitals, things can just happen. Even if the robot’s general indications of a patient trend upwards, they may just end up suddenly falling and the robot will have to act to find out the cause and solution. Also, certain methods that work for a majority of patients may wind up being detrimental to some others, and will need to be taken into account as well. This is not a deterministic environment by any means, but a stochastic one.
+ 
+   
+In a game of virtual poker, there won’t be any scenarios that cause the environment to change. It’s just you, the AI and the cards. Also, when it’s one’s turn, the other player can’t act just yet. This is a static environment.
+
+In this game of poker, the AI can’t see the player’s hand, so it can’t make decisions based on that. So it’s partially observable. 
+
+Each deal is primarily unrelated to the next. Previous deals won’t necessarily factor in to what the current deal gives either the AI or the player. The most prioritized moment is the immediate, so it’s episodic.
+
+While certain hands will always beat other kinds, no matter what, the way the cards are dealt is entirely random. The AI can’t know what the best call is to make, so it’s also stochastic.
+
+ 
+This environment is based entirely on the feedback and watch-time of the person using it. Only the things they watch and rate will be factored in, so it’s not like a show will just pop up without user input. Only the user can make changes, so it’s static.
+
+This agent will have access to the user’s entire library of watched content since its activation, which it will need to make the best decision. Since every input goes through it, it’s fully observable.
+
+This is very much sequential, since each and every show/movie the user watches will be factored into the agent’s choices. If someone watches a lot of sci-fi, they’ll favor more sci-fi in their calculations. If a drastic change is made, that will be factored in too. 
+
+This agent, while they may make pretty good guesses, can’t be entirely certain that a show they recommend will be liked by the user, even if it’s a 99% chance. Likewise, a show the AI might think the user is not likely to enjoy based on the track record so far may end up being very enjoyed. This is stochastic in a nutshell. 
+
+ 	
+Because the chatbot’s calculations can only come from what the person’s responses are, it’s a static system.
+ 
+All the chatbot has to go off of are the user’s inputs, and not anything like medical records or imaging of their brain or other useful information like that. So this is partially observable.
+ 
+It’s unlikely a chatbot could just diagnose somebody after a single interaction. This would take multiple interactions where information from the previous ones would be factored into what’s being said right now. This is no-doubt a sequential scenario. 
+
+If the chatbot’s utilizing SMS, that means it likely has a library of phrases that may be attributed to . But there’s also just as likely a chance that 
+
+  
+When it comes to the ocean floor, the environment will be mainly unchanging.
+
+The robot could have a way to see what’s there on the ocean floor around it and maybe a little bit below, but it can’t know for certain what’s in every possible cubic inch underneath or on. And because it would need to move from place to place to get a better look, it definitely can’t be a fully observable environment, but a partially observable environment.
+ 
+Each instance of collecting a sample from the ocean floor is pretty self-contained. It’s not like collecting one sample will result in others popping up elsewhere along the ocean floor. This means that the sub’s in an episodic environment.
+  
+When collecting samples, the AI pilot knows that activating the “extend arm” command will cause the arm to extend, and the same applies to “retract arm”. Each command has a known outcome, and so this is a deterministic system.
+
+  
+Because the goal of this problem is for the monkey to reach the bananas, and that can only be done when the chair is moved to the middle, the monkey’s on it and the stick is in hand, the goal state is this:
+
+<holdingStick, chairInMiddle, >
+
+The state space for the full problem is shown below: 
+
+ 
+ 
+Kuki’s responses definitely feel more artificial and/or off whenever I don’t speak in clear terms. Small things like “You too?” or “How about you?” tend to be harder for her to get. Then there are times just saying some terms results in strange outputs, like the ones below:
+
+
+
+
+But when I talk with her about things that people are more likely to converse about, such as movies, food or everyday things, her conversations did feel more natural. For example, I told her about how I haven’t drank a soda in my entire life, and she expressed genuine curiosity. Also, sometimes when I did emojis or acronyms (LOL), she knew what those were and would momentarily communicate more human. There were also times I was able to turn a conversation around and showcase something “new” to her, like when she kept saying “Olivia Oranges?” whenever I went “O_O”
+
+
+
+
